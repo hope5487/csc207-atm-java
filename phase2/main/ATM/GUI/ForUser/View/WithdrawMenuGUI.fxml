@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: #2056ad;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATM.GUI.ForUser.Controller.WithdrawMenuGUIController">
+    <Button layoutX="38.0" layoutY="672.0" mnemonicParsing="false" onAction="#pressBack" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #ff6699;" text="Back" textFill="WHITE">
+      <font>
+         <Font name="Avenir Book" size="20.0" />
+      </font></Button>
+    <ChoiceBox fx:id="choiceAccount" layoutX="557.0" layoutY="178.0" onMousePressed="#setChoiceAccount" prefHeight="44.0" prefWidth="257.0" />
+    <Label layoutX="158.0" layoutY="174.0" text="Choose account" textFill="WHITE">
+      <font>
+         <Font name="Avenir Book" size="36.0" />
+      </font></Label>
+    <ChoiceBox fx:id="choiceWithdrawAmount" layoutX="557.0" layoutY="292.0" onMousePressed="#setChoiceWithdrawAmount" prefHeight="44.0" prefWidth="257.0" />
+    <Label layoutX="160.0" layoutY="288.0" text="Choose amount" textFill="WHITE">
+      <font>
+         <Font name="Avenir Book" size="36.0" />
+      </font></Label>
+    <ChoiceBox fx:id="choiceBillType" layoutX="557.0" layoutY="405.0" onMousePressed="#setChoiceBillType" prefHeight="44.0" prefWidth="257.0" />
+    <Label layoutX="160.0" layoutY="409.0" text="Choose bill" textFill="WHITE">
+      <font>
+         <Font name="Avenir Book" size="36.0" />
+      </font></Label>
+    <Button layoutX="641.0" layoutY="672.0" mnemonicParsing="false" onAction="#pressWithdrawConfirm" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #ff6699;" text="Confirm Withdraw" textFill="WHITE">
+      <font>
+         <Font name="Avenir Book" size="20.0" />
+      </font></Button>
+    <Label fx:id="systemMessage" layoutX="55.0" layoutY="25.0" textFill="#bf0000" />
+   <Label layoutX="23.0" layoutY="25.0" text="Withdraw" textFill="WHITE">
+      <font>
+         <Font name="Avenir Heavy" size="36.0" />
+      </font>
+   </Label>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: #2056ad;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATM.GUI.ForUser.Controller.CurrencyExchangeMenuGUIController">
+       <ChoiceBox fx:id="choiceAccount" layoutX="74.0" layoutY="197.0" onMousePressed="#setChoiceAccount" prefHeight="44.0" prefWidth="338.0">
+      <cursor>
+         <Cursor fx:constant="DEFAULT" />
+      </cursor>
+      <effect>
+         <DropShadow color="#63aeff" />
+      </effect></ChoiceBox>
+       <ChoiceBox fx:id="choiceCurrencyType" layoutX="74.0" layoutY="321.0" onMousePressed="#setChoiceCurrencyType" prefHeight="44.0" prefWidth="338.0">
+           <cursor>
+               <Cursor fx:constant="DEFAULT" />
+           </cursor>
+           <effect>
+               <DropShadow color="#63aeff" />
+           </effect></ChoiceBox>
+       <TextField fx:id="choiceExchangeAmount" layoutX="493.0" layoutY="399.0" prefHeight="43.0" prefWidth="241.0" />
+       <Label layoutX="73.0" layoutY="132.0" text="Choose account to exchange funds from:" textFill="WHITE">
+      <font>
+         <Font name="Avenir Book" size="30.0" />
+      </font></Label>
+       <Label layoutX="73.0" layoutY="260.0" text="Select currency to exchange into:" textFill="#fffbfb">
+      <font>
+         <Font name="Avenir Book" size="30.0" />
+      </font></Label>
+       <Label layoutX="74.0" layoutY="402.0" text="Enter amount to exchange:" textFill="WHITE">
+      <font>
+         <Font name="Avenir Book" size="30.0" />
+      </font></Label>
+       <Button layoutX="35.0" layoutY="670.0" mnemonicParsing="false" onAction="#pressBack" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #ff6699;" text="Back" textFill="WHITE">
+           <font>
+               <Font name="Avenir Book" size="20.0" />
+           </font></Button>
+       <Button layoutX="640.0" layoutY="670.0" mnemonicParsing="false" onAction="#pressExchangeConfirm" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #ff6699;" text="Confirm" textFill="WHITE">
+           <font>
+               <Font name="Avenir Book" size="20.0" />
+           </font></Button>
+       <Label fx:id="systemMessage" layoutX="35.0" layoutY="55.0" textFill="#c90000" />
+   <Label layoutX="23.0" layoutY="20.0" text="Currency Exchange" textFill="WHITE">
+      <font>
+         <Font name="Avenir Heavy" size="36.0" />
+      </font>
+   </Label>
+   </AnchorPane>

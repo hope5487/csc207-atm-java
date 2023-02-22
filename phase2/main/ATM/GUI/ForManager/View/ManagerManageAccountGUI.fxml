@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATM.GUI.ForManager.Controller.ManagerManageAccountGUIController">
+    <Button layoutX="35.0" layoutY="550.0" mnemonicParsing="false" onAction="#printAccountBalance" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: #ab0070;" text="View Balance" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="16.0" />
+      </font></Button>
+
+
+    <Button layoutX="35.0" layoutY="201.0" mnemonicParsing="false" onAction="#printRecentTransactions" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: #ab0070;" text="Check Transactions" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="16.0" />
+        </font></Button>
+
+    <Button layoutX="35.0" layoutY="59.0" mnemonicParsing="false" onAction="#addAccountUser" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: #ab0070;" text="Add Account User" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="16.0" />
+        </font></Button>
+
+    <Button layoutX="35.0" layoutY="482.0" mnemonicParsing="false" onAction="#resetPassword" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: #ab0070;" text="Reset Password" textFill="WHITE">
+    <font>
+        <Font name="System Bold" size="16.0" />
+    </font></Button>
+
+<ChoiceBox fx:id="choiceAccount" layoutX="601.0" layoutY="140.0" onMousePressed="#setChoiceAccount" prefWidth="150.0" />
+    <Label layoutX="441.0" layoutY="142.0" text="Choose Account">
+      <font>
+         <Font name="Baskerville" size="20.0" />
+      </font></Label>
+    <Button layoutX="35.0" layoutY="626.0" mnemonicParsing="false" onAction="#pressBack" prefHeight="70.0" prefWidth="227.0" style="-fx-background-color: #e88cba;" text="Back">
+      <font>
+         <Font size="19.0" />
+      </font></Button>
+
+    <Label layoutX="441.0" layoutY="107.0" text="Choose User">
+      <font>
+         <Font name="Baskerville" size="20.0" />
+      </font></Label>
+    <ChoiceBox fx:id="choiceUser" layoutX="601.0" layoutY="105.0" onMousePressed="#setChoiceUser" prefWidth="150.0" />
+    <Button layoutX="35.0" layoutY="128.0" mnemonicParsing="false" onAction="#removeAccountUser" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: #ab0070;" text="Remove Account User" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="16.0" />
+        </font></Button>
+
+    <Button layoutX="35.0" layoutY="342.0" mnemonicParsing="false" onAction="#activateAccount" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: #ab0070;" text="Activate Account" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="16.0" />
+        </font></Button>
+
+    <Button layoutX="35.0" layoutY="415.0" mnemonicParsing="false" onAction="#deactivateAccount" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: #ab0070;" text="Deactivate Account" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="16.0" />
+        </font></Button>
+
+    <Button layoutX="35.0" layoutY="269.0" mnemonicParsing="false" onAction="#renewAccount" prefHeight="45.0" prefWidth="227.0" style="-fx-background-color: #ab0070;" text="Renew Account" textFill="WHITE">
+        <font>
+            <Font name="System Bold" size="16.0" />
+        </font></Button>
+
+    <Label layoutX="442.0" layoutY="177.0" text="Enter Username">
+      <font>
+         <Font name="Baskerville" size="20.0" />
+      </font></Label>
+    <TextField fx:id="userNameTextField" layoutX="601.0" layoutY="178.0" prefHeight="22.0" prefWidth="150.0" />
+    <ScrollPane layoutX="317.0" layoutY="300.0" prefHeight="320.0" prefWidth="612.0">
+        <AnchorPane prefHeight="127.0" prefWidth="556.0">
+            <TextArea fx:id="textArea" layoutX="-6.0" layoutY="-2.0" prefHeight="320.0" prefWidth="612.0" />
+        </AnchorPane>
+    </ScrollPane>
+
+</AnchorPane>

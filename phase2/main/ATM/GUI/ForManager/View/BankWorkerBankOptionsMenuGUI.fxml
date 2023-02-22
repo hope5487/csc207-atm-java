@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: #2056ad;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATM.GUI.ForManager.Controller.ManagerManageUserGUIController">
+      <Button layoutX="578.0" layoutY="453.0" mnemonicParsing="false" onAction="#pressCreateAccount" prefHeight="75.0" prefWidth="300.0" style="-fx-background-color: #6fd8ff;" text="Create New Account" textFill="WHITE">
+            <font>
+                  <Font name="Avenir Book" size="20.0" />
+            </font></Button>
+      <Button layoutX="111.0" layoutY="453.0" mnemonicParsing="false" onAction="#pressCreateUser" prefHeight="75.0" prefWidth="300.0" style="-fx-background-color: #6fd8ff;" text="Create New User" textFill="WHITE">
+            <font>
+                  <Font name="Avenir Book" size="20.0" />
+            </font></Button>
+      <Label layoutX="111.0" layoutY="56.0" text="What would you like to do?" textFill="WHITE">
+            <font>
+                  <Font name="Avenir Book" size="30.0" />
+            </font></Label>
+      <Button layoutX="356.0" layoutY="633.0" mnemonicParsing="false" onAction="#pressBack" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #ff6699;" text="Back" textFill="WHITE">
+            <font>
+                  <Font name="Avenir Book" size="20.0" />
+            </font></Button>
+   <ChoiceBox fx:id="choiceAccountType" layoutX="578.0" layoutY="283.0" onMousePressed="#setChoiceAccountType" prefHeight="75.0" prefWidth="300.0" />
+   <TextField fx:id="userNameTextField" layoutX="111.0" layoutY="283.0" prefHeight="75.0" prefWidth="300.0" />
+   <ComboBox fx:id="choiceUser" layoutX="578.0" layoutY="128.0" onMousePressed="#setChoiceUser" prefHeight="75.0" prefWidth="300.0" />
+   <Label layoutX="578.0" layoutY="93.0" text="Choose User" textFill="WHITE">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label layoutX="111.0" layoutY="242.0" text="Type User Name" textFill="WHITE">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label layoutX="578.0" layoutY="235.0" text="Choose Account Type" textFill="WHITE">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+   <Label fx:id="systemMessage" layoutX="111.0" layoutY="565.0" textFill="#e10000">
+      <font>
+         <Font size="20.0" />
+      </font>
+   </Label>
+</AnchorPane>

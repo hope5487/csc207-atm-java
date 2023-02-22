@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: white;"
+            xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ATM.GUI.ForManager.Controller.ManagerRestockBillsGUIController">
+   <Button layoutX="300.0" layoutY="392.0" mnemonicParsing="false" onAction="#RestockTwentyDollar" prefHeight="45.0"
+           prefWidth="243.0" style="-fx-background-color: #ab0070;" text="Restock $20" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="16.0"/>
+      </font>
+   </Button>
+   <Button layoutX="300.0" layoutY="197.0" mnemonicParsing="false" onAction="#RestockFiveDollar" prefHeight="45.0"
+           prefWidth="243.0" style="-fx-background-color: #ab0070;" text="Restock $5" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="16.0"/>
+      </font>
+   </Button>
+   <Button layoutX="35.0" layoutY="626.0" mnemonicParsing="false" onAction="#pressBack" prefHeight="70.0"
+           prefWidth="227.0" style="-fx-background-color: #e88cba;" text="Back">
+      <font>
+         <Font size="19.0"/>
+      </font>
+   </Button>
+   <Button layoutX="300.0" layoutY="298.0" mnemonicParsing="false" onAction="#RestockTenDollar" prefHeight="45.0"
+           prefWidth="243.0" style="-fx-background-color: #ab0070;" text="Restock $10" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="16.0"/>
+      </font>
+   </Button>
+   <Button layoutX="300.0" layoutY="488.0" mnemonicParsing="false" onAction="#RestockFiftyDollar" prefHeight="45.0"
+           prefWidth="243.0" style="-fx-background-color: #ab0070;" text="Restock $50" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="16.0"/>
+      </font>
+   </Button>
+   <Label layoutX="300.0" layoutY="41.0" text="Enter Amount">
+      <font>
+         <Font size="39.0"/>
+      </font>
+   </Label>
+   <TextField fx:id="amountTextField" layoutX="300.0" layoutY="106.0" prefHeight="47.0" prefWidth="243.0"/>
+   <Label fx:id="systemMessage" layoutX="35.0" layoutY="557.0" textFill="#d00000">
+      <font>
+         <Font size="30.0"/>
+      </font>
+   </Label>
+</AnchorPane>

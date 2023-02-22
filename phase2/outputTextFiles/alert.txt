@@ -1,0 +1,2 @@
+ATM currently has 96 5 dollars, 50 10 dollars, 50 20 dollars, 10 50 dollars.
+ Add money!

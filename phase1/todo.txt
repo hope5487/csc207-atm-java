@@ -1,0 +1,37 @@
+Follow UML diagram!
+
+
+If you haven't yet read this before continuing:
+
+When you are working on your local copy (clone) so everything works make sure to:
+
+1. Right click on main folder and mark directory as 'Sources Root'
+2. Right click on test folder and mark directory as 'Test Sources Root'
+
+For Testing:
+3. Go to Run -> Edit Configurations -> click on the '+' and select JUnit. Select All in package where it says Test Kind.
+Click apply and OK
+
+4. Go to File -> Project Structure -> Library -> click on the '+' on the left side of the window -> Library... -> From Maven
+and enter these 3 files:
+
+junit:junit:4.12
+org.mockito:mockito-all:1.10.19
+
+Select them all and click apply then ok
+
+
+
+0. make empty test files - Sung Hyun
+1. make fields and methods for ATM. - Sung Hyun
+2. make account/children accounts. - Jack / Namratha
+3. make BM. - Zafir
+4. make User. - Salwa / Jack(related to accounts)
+5. make main method / things regarding time / saving account(only related to time) - Sung Hyun / Chris
+6. saving account related to Time - Sung Hyun / Jack
+
+Rules
+
+0. Pull every time when u open IDEA!
+1. Make test when u make any method except getter and setter!
+2. Before you push it, check it pass every test!

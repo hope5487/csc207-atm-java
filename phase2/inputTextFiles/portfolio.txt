@@ -1,0 +1,9 @@
+portfolio,8847.32
+stock,ATVI,70
+stock,AMD,50
+portfolio,9997.65
+stock,BIDU,10
+portfolio,7590.0
+stock,AMD,100
+portfolio,0.0
+portfolio,0.0

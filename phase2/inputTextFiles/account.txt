@@ -1,0 +1,11 @@
+ChequingAccount,0,1999/1/1,2023/3/31,7866.0,chris/roy,true
+SavingAccount,1,1999/2/1,2019/5/5,250.60980000000006,roy,true
+CreditCardsAccount,2,2016/1/1,2023/5/9,-200.0,chris/roy,true
+LineOfCreditAccount,3,2016/1/1,2019/5/5,-50.0,chris/roy,true
+StudentAccount,4,2019/3/25,2019/5/5,0.0,chris,false
+ChequingAccount,5,2019/3/25,2019/5/5,1088960.0,salwa,false
+CreditCardsAccount,6,2019/3/25,2023/3/25,10.0,salwa/roy,true
+ChequingAccount,7,2019/3/31,2023/3/31,0.0,lindsey,true
+SavingAccount,8,2019/3/31,2023/3/31,0.0,lindsey,true
+ChequingAccount,9,2019/3/31,2023/3/31,0.0,test,true
+StudentAccount,10,2019/3/31,2023/3/31,0.0,test,true

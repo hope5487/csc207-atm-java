@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: #2056ad;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATM.GUI.ForUser.Controller.TransferToAccountGUIController">
+    <Button layoutX="42.0" layoutY="674.0" mnemonicParsing="false" onAction="#pressBack" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #ff6699;" text="Back" textFill="WHITE">
+      <font>
+         <Font name="Avenir Book" size="20.0" />
+      </font></Button>
+
+    <Button layoutX="658.0" layoutY="674.0" mnemonicParsing="false" onAction="#pressConfirm" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #ff6699;" text="Confirm" textFill="WHITE">
+      <font>
+         <Font size="20.0" />
+      </font></Button>
+    <ChoiceBox fx:id="choiceAccountToSend" layoutX="384.0" layoutY="181.0" onMousePressed="#setChoiceAccountToSend" prefHeight="44.0" prefWidth="233.0" />
+    <Label layoutX="337.0" layoutY="119.0" text="Choose account to send" textFill="WHITE">
+      <font>
+         <Font name="Avenir Book" size="30.0" />
+      </font></Label>
+    <Label layoutX="322.0" layoutY="256.0" text="Choose account to receive" textFill="WHITE">
+      <font>
+         <Font name="Avenir Book" size="30.0" />
+      </font></Label>
+    <Label layoutX="229.0" layoutY="435.0" text="Enter Amount" textFill="WHITE">
+      <font>
+         <Font name="Avenir Book" size="30.0" />
+      </font></Label>
+    <ChoiceBox fx:id="choiceAccountToReceive" layoutX="388.0" layoutY="317.0" onMousePressed="#setChoiceAccountToReceive" prefHeight="44.0" prefWidth="233.0" />
+    <TextField fx:id="transferAmountTextField" layoutX="513.0" layoutY="435.0" prefHeight="44.0" prefWidth="226.0" />
+    <Label fx:id="systemMessage" layoutX="229.0" layoutY="520.0" textFill="#cd0000">
+        <font>
+            <Font name="Avenir Book" size="20.0" />
+        </font></Label>
+    <Label layoutX="14.0" layoutY="21.0" text="Transfer between Accounts" textFill="WHITE">
+      <font>
+         <Font name="Avenir Heavy" size="36.0" />
+      </font>
+    </Label>
+</AnchorPane>

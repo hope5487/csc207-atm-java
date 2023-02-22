@@ -1,0 +1,5 @@
+chris,0000,0,0,user
+roy,0000,0,1,worker
+salwa,1234,5,2,worker
+lindsey,0000,7,3,user
+test,0000,9,4,worker

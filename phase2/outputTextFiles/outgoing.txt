@@ -1,0 +1,10 @@
+User roy transferred out $20.0 from 1 to abc
+User roy transferred out $50.0 from 0 to test
+User roy exchanged $100.0 from 0 to JPY and was returned 8220.0
+User roy transferred out $50.0 from 0 to 1
+User roy transferred out $50.0 from 0 to abc
+User roy transferred out $24.0 from 0 to Shopping
+User chris transferred out $24.0 from 0 to Shopping
+User roy transferred out $10.0 from 0 to test0
+User roy transferred out $10.0 from 1 to test1
+User salwa transferred out $10.0 from 6 to test3

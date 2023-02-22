@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: #2056ad;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ATM.GUI.ForUser.Controller.StoreMenuGUIController">
+   <Label layoutX="69.0" layoutY="93.0" text="Select the items you would like to purchase from the list below:" textFill="WHITE">
+      <font>
+         <Font name="Avenir Book" size="30.0" />
+      </font></Label>
+   <Button layoutX="642.0" layoutY="140.0" mnemonicParsing="false" onAction="#pressAddToShoppingCart" prefHeight="63.0" prefWidth="168.0" style="-fx-background-color: #6fd8ff;" text="Add To Shopping Cart" textFill="WHITE" />
+
+   <Button layoutX="50.0" layoutY="666.0" mnemonicParsing="false" onAction="#pressBack" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #ff6699;" text="Back" textFill="WHITE">
+      <font>
+         <Font size="18.0" />
+      </font></Button>
+   <Label layoutX="41.0" layoutY="34.0" text="Store Menu" textFill="WHITE">
+      <font>
+         <Font name="Avenir Heavy" size="36.0" />
+      </font>
+   </Label>
+   <Button layoutX="642.0" layoutY="666.0" mnemonicParsing="false" onAction="#pressCheckout" prefHeight="44.0" prefWidth="300.0" style="-fx-background-color: #ff6699;" text="Check Out" textFill="WHITE">
+      <font>
+         <Font name="Avenir Book" size="20.0" />
+      </font>
+   </Button>
+   <ComboBox fx:id="itemComboBox" layoutX="50.0" layoutY="140.0" onMousePressed="#setItemComboBox" prefHeight="63.0" prefWidth="336.0" />
+   <ComboBox fx:id="amountComboBox" layoutX="407.0" layoutY="140.0" onMousePressed="#setAmountComboBox" prefHeight="63.0" prefWidth="217.0" />
+   <Button layoutX="828.0" layoutY="140.0" mnemonicParsing="false" onAction="#pressRemove" prefHeight="63.0" prefWidth="114.0" style="-fx-background-color: #6fd8ff;" text="Remove" textFill="WHITE" />
+    <ScrollPane layoutX="50.0" layoutY="224.0" prefHeight="379.0" prefWidth="892.0">
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="378.0" prefWidth="890.0">
+            <TextArea fx:id="cartArea" prefHeight="366.0" prefWidth="892.0" />
+        </AnchorPane>
+    </ScrollPane>
+   <Label fx:id="systemMessage" layoutX="50.0" layoutY="617.0" textFill="#eb0000">
+      <font>
+         <Font size="30.0" />
+      </font>
+   </Label>
+
+</AnchorPane>
